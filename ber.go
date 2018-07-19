@@ -63,9 +63,9 @@ func checkInteger(bytes []byte) error {
 	if len(bytes) == 1 {
 		return nil
 	}
-	if (bytes[0] == 0 && bytes[1]&0x80 == 0) || (bytes[0] == 0xff && bytes[1]&0x80 == 0x80) {
-		return asn1.StructuralError{Msg: "integer not minimally-encoded"}
-	}
+	//if (bytes[0] == 0 && bytes[1]&0x80 == 0) || (bytes[0] == 0xff && bytes[1]&0x80 == 0x80) {
+	//	return asn1.StructuralError{Msg: "integer not minimally-encoded"}
+	//}
 	return nil
 }
 
